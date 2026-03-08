@@ -11,7 +11,7 @@ export default function ContenidoInicio() {
       <div className="card">
         <div className="perfil-wrapper">
           <div className="perfil-avatar">
-            <img src="../../public/img.png" alt="Sandra Santos" />
+            <img src="public/img.png" alt="Sandra Santos" />
           </div>
 
           <div style={{ flex: 1 }}>
