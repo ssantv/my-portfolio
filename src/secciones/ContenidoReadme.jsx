@@ -49,7 +49,6 @@ export default function ContenidoReadme() {
   return (
     <div className="seccion readme-seccion">
 
-      {/* Cabecera estilo terminal */}
       <div className="readme-terminal">
         <div className="readme-terminal-bar">
           <span className="readme-dot readme-dot-red" />
@@ -72,13 +71,11 @@ export default function ContenidoReadme() {
         </div>
       </div>
 
-      {/* Título y bio */}
       <h1 className="readme-titulo"># {t.titulo}</h1>
       <p className="readme-subtitulo">{t.subtitulo}</p>
       <p className="readme-bio">
       </p>
 
-      {/* Frase */}
       <div className="readme-frase">
         <p className="readme-frase-texto">{t.frase}</p>
         <p className="readme-frase-autor kw-cmt">{t.fraseAutor}</p>

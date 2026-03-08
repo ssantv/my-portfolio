@@ -883,8 +883,6 @@ button {
   opacity: 0.75;
 }
 
-/* ── PÁGINA DE DETALLE ────────────────────────────────────── */
-
 .detalle-seccion {
   max-width: 860px;
 }
@@ -1007,8 +1005,6 @@ button {
   opacity: 0.75;
 }
 
-/* ── PÁGINA DE DETALLE ────────────────────────────────────── */
-
 .detalle-seccion {
   max-width: 860px;
 }
@@ -1069,8 +1065,6 @@ button {
   }
 }
 
-/* ── DETALLE — secciones extra ────────────────────────────── */
-
 .detalle-contexto {
   margin-top: 16px;
   font-size: 12px;
@@ -1110,13 +1104,10 @@ button {
   line-height: 1.6;
 }
 
-/* ── README ───────────────────────────────────────────────── */
-
 .readme-seccion {
   max-width: 720px;
 }
 
-/* Terminal */
 .readme-terminal {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1167,7 +1158,6 @@ button {
   color: var(--green);
 }
 
-/* Cabecera */
 .readme-titulo {
   font-size: 26px;
   font-weight: 700;
@@ -1193,7 +1183,6 @@ button {
   margin-bottom: 32px;
 }
 
-/* Bloques */
 .readme-bloque {
   margin-bottom: 32px;
 }
@@ -1203,7 +1192,6 @@ button {
   margin-bottom: 12px;
 }
 
-/* Stack */
 .readme-stack {
   display: flex;
   flex-wrap: wrap;
@@ -1216,7 +1204,6 @@ button {
   font-size: 12px;
 }
 
-/* Navegación */
 .readme-nav {
   display: flex;
   flex-direction: column;
@@ -1241,7 +1228,6 @@ button {
   color: var(--text);
 }
 
-/* Frase */
 .readme-frase {
   border-left: 3px solid var(--border);
   padding: 12px 20px;

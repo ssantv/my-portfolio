@@ -19,7 +19,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
   return (
     <div className="seccion detalle-seccion">
 
-      {/* Cabecera */}
       <div className="firma">
         <span className="kw-const">const </span>
         <span className="kw-var">{slug} </span>
@@ -28,7 +27,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
 
       <div className="indent">
 
-        {/* Descripción + contexto */}
         <div className="card detalle-card-desc">
           <p className="kw-cmt">{"// descripción"}</p>
           {detalle.descripcionLarga.split("\n\n").map((p, i) => (
@@ -45,7 +43,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
           </div>
         </div>
 
-        {/* Galería */}
         {detalle.imagenes?.length > 0 && (
           <div className="detalle-galeria">
             {detalle.imagenes.map((src, i) => (
@@ -56,7 +53,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
           </div>
         )}
 
-        {/* Funcionalidades */}
         {detalle.funcionalidades?.length > 0 && (
           <div className="card" style={{ marginBottom: 16 }}>
             <p className="kw-cmt" style={{ marginBottom: 16 }}>{"// funcionalidades"}</p>
@@ -74,7 +70,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
           </div>
         )}
 
-        {/* Stack */}
         {detalle.stack && (
           <div className="card" style={{ marginBottom: 16 }}>
             <p className="kw-cmt" style={{ marginBottom: 16 }}>{"// stack"}</p>
@@ -90,7 +85,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
           </div>
         )}
 
-        {/* Retos y aprendizajes */}
         <div className="detalle-dos-col">
           <div className="card">
             <p className="kw-cmt" style={{ marginBottom: 12 }}>{"// retos"}</p>
@@ -106,7 +100,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
           </div>
         </div>
 
-        {/* Próximas features */}
         {detalle.proximasFeatures?.length > 0 && (
           <div className="card" style={{ marginBottom: 16 }}>
             <p className="kw-cmt" style={{ marginBottom: 12 }}>{"// próximas features"}</p>
@@ -116,7 +109,6 @@ export default function ContenidoDetalleProyecto({ slug }) {
           </div>
         )}
 
-        {/* Links */}
         <div className="proyecto-links" style={{ marginTop: 8 }}>
           <a href={github} target="_blank" rel="noopener noreferrer" className="proyecto-link proyecto-link-code">
             <Github size={16} /> {t.codigo}

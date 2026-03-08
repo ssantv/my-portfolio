@@ -11,7 +11,7 @@ const traducciones = {
       formacionDesc: "• Historia del Arte · Universidad de León\n• Full Stack Web Development · 4Geeks Academy",
       experienciaTitulo: "Full-Stack Software Developer\n• Desarrollo web Full Stack\n• Backend con Python, Flask, SQLAlchemy y JWT\n• Backend con Node.js, Express y MongoDB\n• Frontend con React, Vite y TypeScript",
       experienciaSubtitulo: "Experiencia profesional: próximamente",
-      experienciaDesc: "Proyectos propios, trabajos académicos y muchas horas debuggeando 😅",
+      experienciaDesc: "Proyectos propios, trabajos académicos y muchas horas debuggeando",
       interesesDesc: "Backend, APIs, buenas prácticas, arquitectura de software, accesibilidad web y aprendizaje continuo.",
       cvTexto: "Si quieres conocer más sobre mi experiencia y formación:", cvBoton: "Descargar CV",
       frase: "«El paso más importante que puede dar alguien. No es el primero, ¿verdad? Es el próximo. Siempre el próximo paso.»",
@@ -20,8 +20,8 @@ const traducciones = {
     proyectos: {
       fn: "proyectos", verCaracteristicas: "Ver características",
       ocultarCaracteristicas: "Ocultar características", codigo: "Código", demo: "Demo",
-verDetalle: "Ver detalle",
-otrosProyectos: "Otros proyectos de aprendizaje",
+      verDetalle: "Ver detalle",
+      otrosProyectos: "Otros proyectos de aprendizaje",
     },
     habilidades: {
       fn: "habilidades", frontend: "Frontend", backend: "Backend", herramientas: "Herramientas",
@@ -49,11 +49,11 @@ otrosProyectos: "Otros proyectos de aprendizaje",
     explorador: {
       titulo: "Explorador",
       archivos: [
-        { nombre: "inicio.jsx",      archivo: "inicio.jsx"      },
-        { nombre: "sobre-mi.jsx",    archivo: "sobre-mi.jsx"    },
-        { nombre: "proyectos.jsx",   archivo: "proyectos.jsx"   },
+        { nombre: "inicio.jsx", archivo: "inicio.jsx" },
+        { nombre: "sobre-mi.jsx", archivo: "sobre-mi.jsx" },
+        { nombre: "proyectos.jsx", archivo: "proyectos.jsx" },
         { nombre: "habilidades.jsx", archivo: "habilidades.jsx" },
-        { nombre: "contacto.jsx",    archivo: "contacto.jsx"    },
+        { nombre: "contacto.jsx", archivo: "contacto.jsx" },
       ],
     },
     pestanas: {
@@ -83,8 +83,8 @@ otrosProyectos: "Otros proyectos de aprendizaje",
     proyectos: {
       fn: "projects", verCaracteristicas: "View features",
       ocultarCaracteristicas: "Hide features", codigo: "Code", demo: "Demo",
-verDetalle: "View details",
-otrosProyectos: "Other learning projects",
+      verDetalle: "View details",
+      otrosProyectos: "Other learning projects",
     },
     habilidades: {
       fn: "skills", frontend: "Frontend", backend: "Backend", herramientas: "Tools",
@@ -112,11 +112,11 @@ otrosProyectos: "Other learning projects",
     explorador: {
       titulo: "Explorer",
       archivos: [
-        { nombre: "home.jsx",      archivo: "inicio.jsx"      },
-        { nombre: "about-me.jsx",  archivo: "sobre-mi.jsx"    },
-        { nombre: "projects.jsx",  archivo: "proyectos.jsx"   },
-        { nombre: "skills.jsx",    archivo: "habilidades.jsx" },
-        { nombre: "contact.jsx",   archivo: "contacto.jsx"    },
+        { nombre: "home.jsx", archivo: "inicio.jsx" },
+        { nombre: "about-me.jsx", archivo: "sobre-mi.jsx" },
+        { nombre: "projects.jsx", archivo: "proyectos.jsx" },
+        { nombre: "skills.jsx", archivo: "habilidades.jsx" },
+        { nombre: "contact.jsx", archivo: "contacto.jsx" },
       ],
     },
     pestanas: {

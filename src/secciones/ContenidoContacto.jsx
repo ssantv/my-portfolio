@@ -3,7 +3,6 @@ import { Send, Check, AlertCircle, Mail, Github, Linkedin } from "lucide-react";
 import { useLang } from "../context/LangContext";
 import traducciones from "../data/traducciones";
 
-// Email partido en dos para evitar scraping de bots
 const EMAIL_USER = "ssantv00";
 const EMAIL_DOMAIN = "gmail.com";
 
@@ -12,7 +11,7 @@ export default function ContenidoContacto() {
   const t = traducciones[lang].contacto;
 
   const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
-  const [estado, setEstado] = useState(null); // null | "exito" | "error"
+  const [estado, setEstado] = useState(null);
   const [enviando, setEnviando] = useState(false);
 
   const handleEmailClick = () => {
@@ -127,7 +126,6 @@ export default function ContenidoContacto() {
         <p style={{ marginBottom: 16 }}>{t.otros}</p>
         <div className="contacto-links">
 
-          {/* Email ofuscado: nunca aparece como string completo en el DOM */}
           <button onClick={handleEmailClick} className="contacto-link contacto-link-btn">
             <Mail size={16} />
             <span aria-label="email">

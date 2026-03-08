@@ -30,7 +30,7 @@ export default function App() {
       return (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100%" }}>
           <p style={{ color: "var(--text-dim)", fontSize: 15 }}>
-            {lang === "es" ? "Abrí un archivo desde el explorador" : "Open a file from the explorer"}
+            {lang === "es" ? "Abre un archivo desde el explorador" : "Open a file from the explorer"}
           </p>
         </div>
       );

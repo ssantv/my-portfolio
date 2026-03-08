@@ -24,7 +24,6 @@ export default function ContenidoProyectos({ onAbrirDetalle }) {
         {lista.map((p, idx) => (
           <div key={idx} className="card card-proyecto">
 
-            {/* Captura de pantalla */}
             {p.imagen && (
               <div className="proyecto-imagen" onClick={() => onAbrirDetalle(p.slug)}>
                 <img src={p.imagen} alt={p.nombre} />
@@ -77,7 +76,6 @@ export default function ContenidoProyectos({ onAbrirDetalle }) {
         ))}
       </div>
 
-      {/* Sección otros proyectos de aprendizaje */}
       <div className="aprendizaje-seccion">
         <button
           className="btn-aprendizaje-toggle"

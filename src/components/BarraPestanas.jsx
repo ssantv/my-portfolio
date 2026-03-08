@@ -38,7 +38,7 @@ export default function BarraPestanas({
           key={id}
           className={`pestana ${archivoAbierto === id ? "activa" : ""}`}
           onClick={() => setArchivoAbierto(id)}
-          onMouseDown={(e) => {
+          onMouseUp={(e) => {
             if (e.button === 1) {
               e.preventDefault();
               cerrar(id, e);
