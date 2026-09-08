@@ -1,6 +1,98 @@
 export const proyectos = {
   es: [
     {
+      slug: "mentecobre",
+      nombre: "Mentecobre",
+      imagen: "/mentecobre1.png",
+      descripcion:
+        "Frontend para la herramienta de gestión de la traducción de la Coppermind al español",
+      tecnologias: [
+        "React",
+        "Vite",
+        "Material UI",
+        "MUI X Charts",
+        "CSS propio",
+        "Fetch/API",
+      ],
+      caracteristicas: [
+        "Autenticación por roles (admin, revisor, traductor) con rutas protegidas y permisos según sección",
+        "Panel de administración con CRUD completo",
+        "Gestión mensual de traducciones desde la API de la Coppermind",
+        "Notificaciones unificadas",
+        "Estadísticas de progreso con gráficas interactivas",
+        "Diseño propio con tema claro/oscuro, variables CSS y maquetación responsive",
+        "Módulo de ocio con minijuegos funcionales",
+      ],
+      github: "https://github.com/mentecobre",
+      demo: "https://mentecobre-muga.onrender.com/",
+      detalle: {
+        descripcionLarga:
+          "Cada mes, el equipo de traducción al español de la Coppermind recibe una ronda de cambios de la wiki en inglés: artículos nuevos, títulos corregidos, páginas que por fin hay que crear… A mano, eso significa revisar decenas de páginas una a una, con un Excel y mucha fe. MenteCobre existe para acabar con eso.\n\nElla automatiza la parte aburrida: la web detecta los cambios mensuales y los agrupa por tipo de trabajo (artículos por crear, sin traducir, traducidos o con cambios grandes), enlaza cada uno con su página exacta en la wiki en inglés y en español, y deja marcar el trabajo como hecho de uno en uno o en bloque. El panel de administración centraliza el día a día del equipo: el CRUD de glosario, artículos, usuarios y universos, las notificaciones de erratas y solicitudes de reclutamiento, y las estadísticas de progreso del proyecto.\n\nY como también somos gente, la web guarda un rincón de ocio con minijuegos temáticos: un quiz cronometrado del Cosmere, un sudoku con los metales alománticos, retos de agudeza visual y una sección completa de noticias y pasatiempos de la comunidad.",
+        contexto:
+          "Evolución de una herramienta anterior que había, pero mejorada a medida que han surgido necesidades",
+          imagenes: [
+          "/mentecobre1.png",
+          "/mentecobre2.png",
+          "/mentecobre3.png",
+          "/mentecobre4.png",
+          "/mentecobre5.png",
+        ],
+        funcionalidades: [
+          {
+            titulo: "Graficas de avance",
+            descripcion:
+              "Lo nuestro es un proyecto voluntario de traducción y valoramos ser transparentes en cuanto a nuestro trabajo y su avance.",
+          },
+          {
+            titulo: "Glosario",
+            descripcion:
+              "Ya sea que leas en inglés o en español, hay muchos términos de la obra de Brandon Sanderson que se pueden confundir, asi que tenemos nuestro propio glosario de términos.",
+          },
+          {
+            titulo: "Ocio",
+            descripcion:
+              "Es un proyecto que lleva en funcionamiento muchos años, y una manera de mantener la motivación (tanto propia como de otros usuarios) ha sido crear diferentes proyectos de ocio: aventuras interactivas, juegos de agilidad, juegos estilo trivial...",
+          },
+          {
+            titulo: "Administración",
+            descripcion:
+              "Aunque sea un proyecto voluntario, sigue habiendo gente que organiza el trabajo y al equipo y que se encarga no solo de traducir y revisar, si no se asegurarse de que todo funciona correctamente. Esta es su puesto de mando",
+          },
+          {
+            titulo: "Modo claro y oscuro",
+            descripcion:
+              "No a todo el mundo le gusta vivir en el Lado Diurno de Taldain, por lo que hemos preparado un modo claro y oscuro que se heredan en toda la web con solo elegirlo al inicio",
+          },
+        ],
+       stack: {
+  frontend:
+    "React 19 + Vite 8, React Router 7, Material UI + MUI X Charts, CSS propio con variables y tema claro/oscuro",
+  backend: "Frontend puro por ahora: capa de datos con mock en localStorage y contratos JSON, preparada para conectar la API real de la Coppermind sin tocar los servicios",
+  extras:
+    "ESLint, diseño responsive, arquitectura por servicios (src/api) con seed versionado, validación con React Hooks (useAuth, rutas protegidas por rol)",
+},
+        retos: [
+  "Generar la ronda de cambios mensual desde la API de la wiki sin backend: clasificar cada artículo automáticamente por tipo de trabajo (HTUP, crear, sin traducir, traducido) usando solo el frontend",
+  "Mantener la web de administración y la web pública viviendo juntas en la misma SPA con rutas protegidas por rol (admin, revisor, traductor)",
+  "Diseñar la capa de datos desacoplada: mock en localStorage con seeds versionados y contratos JSON, para migrar a la API real sin reescribir la aplicación",
+  "Encontrar el equilibrio entre un diseño propio y coherente (CSS a medida, tema claro/oscuro) y no reinventar la rueda donde MUI ya lo resuelve",
+],
+aprendizajes: [
+  "Separar frontend 'de consumo' y panel interno sin perder la coherencia visual de la marca",
+  "Modelar el dato una sola vez (contratos JSON) y que toda la app dependa de esa fuente",
+  "Gestionar permisos y visibilidad por rol desde el primer día, no como parche",
+  "Versionar los seeds para que los cambios de datos no rompan los navegadores con localStorage ya sembrado",
+],
+proximasFeatures: [
+  "Conectar la API real del MediaWiki (Coppermind) para detectar cambios de forma automática en vez del mock",
+  "Panel ampliado de usuarios: historial, cargas de trabajo por traductor y métricas individuales",
+  "Notificaciones por email al equipo cuando entran erratas o solicitudes nuevas",
+  "Vista comparativa de ediciones lado a lado (EN y ES) dentro de la web",
+  "Migración progresiva a un backend propio con autenticación de verdad en lugar del mock",
+],
+      },
+    },
+    {
       slug: "hairbnb",
       nombre: "Hairbnb",
       imagen: "/hairbnb-preview.png",
